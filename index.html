@@ -89,26 +89,31 @@
     <header class="hero-section">
         <h1>Welcome to Puzzle</h1>
         <p>AI-powered solutions for simplifying accounting and tax management.</p>
+        <img src="hero-image.jpg" alt="Hero Image" style="width: 100%; max-width: 600px; margin-top: 20px;">
     </header>
     <main>
         <section id="hero" class="fade-in">
             <h2>Empower Your Business</h2>
             <p>Leverage AI-driven tools to streamline your accounting processes and focus on what matters most.</p>
+            <img src="business-tools.jpg" alt="Business Tools" style="width: 100%; max-width: 500px; margin-top: 20px;">
         </section>
         <section id="features" class="slide-up">
             <h2>Our Services</h2>
-            <ul>
+            <ul class="features-list">
                 <li>
                     <h3>AI-Powered Accounting</h3>
                     <p>Automate your accounting tasks with our cutting-edge AI technology.</p>
+                    <img src="ai-accounting.jpg" alt="AI Accounting" style="width: 100%; max-width: 400px; margin-top: 10px;">
                 </li>
                 <li>
                     <h3>Tax Management Simplified</h3>
                     <p>Stay compliant and manage your taxes effortlessly with our intuitive platform.</p>
+                    <img src="tax-management.jpg" alt="Tax Management" style="width: 100%; max-width: 400px; margin-top: 10px;">
                 </li>
                 <li>
                     <h3>Real-Time Financial Insights</h3>
                     <p>Gain valuable insights into your financial data with our real-time analytics tools.</p>
+                    <img src="financial-insights.jpg" alt="Financial Insights" style="width: 100%; max-width: 400px; margin-top: 10px;">
                 </li>
             </ul>
         </section>
@@ -121,5 +126,21 @@
     <footer class="fade-in">
         <p>&copy; 2025 Puzzle. All rights reserved.</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-links a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    window.scrollTo({
+                        top: targetSection.offsetTop,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html> 
