@@ -1,14 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #2B4747; /* Dark green */
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -16,8 +18,8 @@ main {
     padding: 20px;
 }
 
-h1, h2 {
-    color: #333;
+h1, h2, h3 {
+    color: #2B4747; /* Dark green */
 }
 
 ul {
@@ -26,10 +28,10 @@ ul {
 }
 
 li {
-    background: #f4f4f4;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
+    background: #e0e0e0;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
 }
 
 .button {
@@ -37,17 +39,17 @@ li {
     padding: 10px 20px;
     margin-top: 10px;
     color: white;
-    background-color: #4CAF50;
+    background-color: #19C559; /* Bright green */
     text-decoration: none;
     border-radius: 5px;
 }
 
 .button:hover {
-    background-color: #45a049;
+    background-color: #16a34a; /* Darker green */
 }
 
 footer {
-    background-color: #333;
+    background-color: #2B4747; /* Dark green */
     color: white;
     text-align: center;
     padding: 10px 0;
