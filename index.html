@@ -6,6 +6,55 @@
     <title>Report Dock</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Updated color palette */
+        :root {
+            --primary-color: #040309;
+            --secondary-color: #30174A;
+            --accent-color: #19C559;
+            --background-color: #F1ECFB;
+            --text-color: #2B4747;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .navbar {
+            background-color: var(--primary-color);
+        }
+
+        .logo {
+            color: var(--accent-color);
+        }
+
+        .nav-links a {
+            color: var(--secondary-color);
+        }
+
+        .hero-section {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .button {
+            background-color: var(--accent-color);
+            color: var(--background-color);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            text-align: center;
+            padding: 20px 0;
+        }
+
         /* Add animations */
         .fade-in {
             animation: fadeIn 2s ease-in;
@@ -38,55 +87,39 @@
         </div>
     </nav>
     <header class="hero-section">
-        <h1>Welcome to Report Dock</h1>
-        <p>Your one-stop solution for creating KPI dashboards and comprehensive reports.</p>
+        <h1>Welcome to Puzzle</h1>
+        <p>AI-powered solutions for simplifying accounting and tax management.</p>
     </header>
     <main>
         <section id="hero" class="fade-in">
-            <h2>Empower Your Data</h2>
-            <p>Transform raw data into actionable insights with our powerful dashboard and reporting tools. Whether you're an individual, a company, or an MSP, Report Dock provides the flexibility and features you need to succeed.</p>
+            <h2>Empower Your Business</h2>
+            <p>Leverage AI-driven tools to streamline your accounting processes and focus on what matters most.</p>
         </section>
         <section id="features" class="slide-up">
-            <h2>Features</h2>
+            <h2>Our Services</h2>
             <ul>
                 <li>
-                    <h3>Secure User Registration and Login</h3>
-                    <p>Ensure your data is protected with our robust authentication system. Register easily and choose from various account types to suit your needs.</p>
+                    <h3>AI-Powered Accounting</h3>
+                    <p>Automate your accounting tasks with our cutting-edge AI technology.</p>
                 </li>
                 <li>
-                    <h3>Role-Based Access Control</h3>
-                    <p>Manage access to features and data with precision. Our role-based system ensures that users only see what they need to.</p>
+                    <h3>Tax Management Simplified</h3>
+                    <p>Stay compliant and manage your taxes effortlessly with our intuitive platform.</p>
                 </li>
                 <li>
-                    <h3>Integration with Stripe for Subscriptions</h3>
-                    <p>Seamlessly manage your subscriptions with Stripe integration. Enjoy hassle-free payment processing and tier management.</p>
-                </li>
-                <li>
-                    <h3>Custom API Integration Management</h3>
-                    <p>Connect to various data sources with ease. Our platform supports both prebuilt and custom API integrations, allowing you to tailor your data ecosystem.</p>
-                </li>
-                <li>
-                    <h3>Custom Card Creation for Data Visualization</h3>
-                    <p>Create custom cards to visualize your data in the way that makes the most sense for you. Choose from text, graphs, charts, and more.</p>
-                </li>
-                <li>
-                    <h3>Dashboard Display with Automatic Refresh</h3>
-                    <p>Keep your data up-to-date with automatic refreshes. Arrange your custom cards on a dashboard for a comprehensive view of your key metrics.</p>
-                </li>
-                <li>
-                    <h3>Custom Report Generation and Sharing</h3>
-                    <p>Design and share professional reports with ease. Use our WYSIWYG editor to create whitelabelled reports and export them as PDFs.</p>
+                    <h3>Real-Time Financial Insights</h3>
+                    <p>Gain valuable insights into your financial data with our real-time analytics tools.</p>
                 </li>
             </ul>
         </section>
         <section id="signup" class="fade-in">
-            <h2>Get Started</h2>
-            <p>Sign up today to start building your dashboards and reports.</p>
-            <a href="signup.html" class="button">Sign Up</a>
+            <h2>Join Us</h2>
+            <p>Sign up today to revolutionize your accounting and tax management.</p>
+            <a href="signup.html" class="button">Get Started</a>
         </section>
     </main>
     <footer class="fade-in">
-        <p>&copy; 2025 Report Dock. All rights reserved.</p>
+        <p>&copy; 2025 Puzzle. All rights reserved.</p>
     </footer>
 </body>
 </html> 
