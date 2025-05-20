@@ -1,0 +1,13 @@
+<%- include('partials/header', { user: { role: 'admin' } }) %>
+<main class="fade-in">
+    <h1>Admin Portal</h1>
+    <table>
+        <thead><tr><th>User</th><th>Role</th></tr></thead>
+        <tbody>
+            <% users.forEach(u => { %>
+                <tr><td><%= u.username %></td><td><%= u.role %></td></tr>
+            <% }) %>
+        </tbody>
+    </table>
+</main>
+<%- include('partials/footer') %>

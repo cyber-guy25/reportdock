@@ -1,3 +1,4 @@
+:root { --primary-color: #040309; --secondary-color: #30174A; --accent-color: #19C559; --background-color: #F1ECFB; --text-color: #2B4747; }
 body {
     font-family: 'Helvetica Neue', sans-serif;
     background-color: var(--background-color);
@@ -53,7 +54,6 @@ body {
 }
 
 .hero-section {
-    background-image: url('hero-bg.jpg');
     background-size: cover;
     background-position: center;
     color: var(--background-color);
