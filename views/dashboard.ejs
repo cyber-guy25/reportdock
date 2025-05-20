@@ -1,0 +1,13 @@
+<%- include('partials/header', { user: user }) %>
+<main class="fade-in">
+    <h1>Dashboard</h1>
+    <p>Welcome, <%= user.username %>! You are logged in as <%= user.role %>.</p>
+    <% if (user.role === 'individual') { %>
+        <p>Your plan gives you basic access.</p>
+    <% } else if (user.role === 'company') { %>
+        <p>Your plan allows team sharing and extra gauges.</p>
+    <% } else if (user.role === 'enterprise') { %>
+        <p>You have full access to DashNexus features.</p>
+    <% } %>
+</main>
+<%- include('partials/footer') %>

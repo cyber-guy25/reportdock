@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashNexus</title>
+    <link rel="stylesheet" href="/styles.css">
+    <meta name="description" content="DashNexus is a comprehensive API hub for building gauges and reports.">
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <a href="/" class="logo">DashNexus</a>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/pricing">Pricing</a></li>
+            <% if (!user) { %>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/signup">Sign Up</a></li>
+            <% } else { %>
+                <li><a href="/dashboard">Dashboard</a></li>
+                <% if (user.role === 'admin') { %>
+                    <li><a href="/admin">Admin</a></li>
+                <% } %>
+                <li><a href="/logout">Logout</a></li>
+            <% } %>
+        </ul>
+    </div>
+</nav>

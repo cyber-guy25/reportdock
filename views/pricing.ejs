@@ -1,0 +1,15 @@
+<%- include('partials/header', { user: user }) %>
+<main class="fade-in">
+    <h1>Pricing</h1>
+    <table>
+        <thead>
+            <tr><th>Plan</th><th>Price</th><th>Features</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Individual</td><td>Free</td><td>Limited gauges and API calls</td></tr>
+            <tr><td>Company</td><td>$49/mo</td><td>Increased limits and team sharing</td></tr>
+            <tr><td>Enterprise</td><td>$99/mo</td><td>All features including MSP tools</td></tr>
+        </tbody>
+    </table>
+</main>
+<%- include('partials/footer') %>
